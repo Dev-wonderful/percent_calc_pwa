@@ -11,9 +11,10 @@
     <button v-on:click="calculate">Calculate</button>
     <div class="result">
       <h2>Percentage is:</h2>
-      <p>Display here</p>
+      <p>{{ calculate }}</p>
     </div>
   </section>
+  <p>{{ value }}</p>
 </template>
 
 <script lang="ts">
@@ -22,15 +23,18 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "PercentCalc",
   date() {
-    value: "number",
-    checkNumber: "",
-    mainNumber: ""
+    return {
+      value: "hello i'm here",
+      checkNumber: "",
+      mainNumber: "",
+    };
   },
-  methods: {
+  computed: {
     calculate(): string {
-      return this.checkNumber + this.mainNumber;
-    }
-  }
+      console.log("Clicked");
+      return "hello";
+    },
+  },
 });
 </script>
 
@@ -64,7 +68,7 @@ input,
 div.result p {
   height: 30px;
   width: 50%;
-  padding-inline-start: 10px;
+  /* padding-inline-start: 10px; */
   font-size: 20px;
   border-radius: 4px;
 }
