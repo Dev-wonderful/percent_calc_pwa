@@ -31,7 +31,6 @@ export default defineComponent({
   },
   methods: {
     calculate(): void {
-      console.log("Clicked");
       // the "+" symbol in front of the variable, converts string to number
       let fnum = +this.parse(this.checkNumber);
       let snum = +this.parse(this.mainNumber);
