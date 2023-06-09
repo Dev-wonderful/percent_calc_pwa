@@ -1,4 +1,8 @@
 # percent_calc_pwa
+```
+This is a simple project, a PWA to help my mum calculate percentage of a number without needing me.
+The setup is described below, nothing special or fancy
+```
 
 ## Project setup
 ```
@@ -20,5 +24,9 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### The Deployed App
+```
+[Netlify](https://www.netlify.com) was used to host this project, because it's good for SPA's and static sites.
+
+See [Percentage Calculator](https://percent-calculator-pwa.netlify.app) for the live project.
+```
